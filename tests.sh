@@ -1,9 +1,10 @@
 #!/bin/bash
+#SBATCH --job-name=test-secdata-container
 #SBATCH --mem=10G
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus=1
 #SBATCH --partition=gpu-a100-80g
-#SBATCH --time=02:00:00
+#SBATCH --time=00:10:00
 
 SIF=secdata_container.sif
 
