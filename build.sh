@@ -10,4 +10,4 @@ if [ ! -f env.yml ]; then
   exit 1
 fi
 
-apptainer build sec_llm.sif sec_llm.def
+apptainer build secdata_container.sif secdata_container.def
