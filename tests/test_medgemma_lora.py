@@ -10,14 +10,14 @@ import time
 model_path = "./models/medgemma-27b-text-it"
 adapter_save_path = "./lora-test-output"
 
-print("🔒 Starting LoRA fine-tuning test.")
+print("Starting LoRA fine-tuning test.")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 
 # -----------------------------
 # Load model and tokenizer (offline)
 # -----------------------------
-print("\n📦 Loading model and tokenizer from local files...")
+print("\nLoading model and tokenizer from local files...")
 start_load = time.time()
 tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
 model = AutoModelForCausalLM.from_pretrained(
