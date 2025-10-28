@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=test-secdata-container
-#SBATCH --mem=16G
+#SBATCH --mem=64G
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus=1
 #SBATCH --partition=gpu-a100-80g
